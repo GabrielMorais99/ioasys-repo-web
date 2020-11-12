@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthUserService } from 'src/app/api/auth-user.service';
 
 @Component({
   selector: 'app-login-user',
@@ -8,8 +10,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginUserComponent implements OnInit {
   public loginForm: FormGroup;
+  loading: any;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private authService: AuthUserService,
+    private router: Router,
+    private localstorage: Storage
+  ) {}
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -18,6 +26,22 @@ export class LoginUserComponent implements OnInit {
       password: ['', Validators.compose([Validators.required])],
     });
   }
+  async presentLoading() {}
 
-  async login() {}
+  async login() {
+    this.presentLoading();
+    this.authService.login(this.loginForm.value).subscribe(
+      async (data) => {
+        console.log(data);
+        await this.localstorage.set('resp-login', data);
+        this.router.navigate(['/user-profile']);
+        // await this.loading.dismiss()
+      },
+      async (error) => {
+        console.log(error);
+        // await this.loading.dismiss()
+        // this.toast('Usuário inválido')
+      }
+    );
+  }
 }
