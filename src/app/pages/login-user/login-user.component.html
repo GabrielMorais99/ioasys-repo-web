@@ -6,27 +6,32 @@
       Lorem ipsum dolor sit amet, contetur adipiscing elit. Nunc accumsan.
     </div>
   </h4>
-
   <div class="login-form">
     <form [formGroup]="loginForm">
       <div>
-        <mat-label type="text" placeholder="Email">Email</mat-label>
-        <input
-          type="text"
-          placeholder="ioasys@gmail.com"
-          formControlName="email"
-        />
+        <mat-form-field appearance="legacy">
+          <mat-label type="text" placeholder="Email">Email</mat-label>
+          <input
+            matInput
+            type="text"
+            placeholder="ioasys@gmail.com"
+            formControlName="email"
+          />
+        </mat-form-field>
       </div>
       <div>
-        <mat-label type="password" placeholder="Senha">Senha</mat-label>
-        <input
-          class="input-field col s6"
-          type="password"
-          placeholder="Senha"
-          formControlName="password"
-        />
+        <mat-form-field appearance="legacy">
+          <mat-label type="password" placeholder="Senha">Senha</mat-label>
+          <input
+            matInput
+            class="input-field col s6"
+            type="password"
+            placeholder="Senha"
+            formControlName="password"
+          />
+        </mat-form-field>
       </div>
-      <div>
+      <div class="button-login">
         <button mat-button>Entrar</button>
       </div>
     </form>

@@ -1,3 +1,16 @@
-.example-form-field {
-  width: 200px;
+.mat-form-field {
+  width: 35rem;
+}
+.button-login {
+}
+@media (max-width: 486px) {
+  .logo {
+    width: 17rem;
+  }
+  .login-form {
+    padding: 10px 10px;
+  }
+  .mat-form-field {
+    width: 25rem;
+  }
 }
