@@ -2,10 +2,16 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  width: 54rem;
+  width: 59%;
   height: 206px;
   border-radius: 10%;
   background: url("assets/img/img-login.png") no-repeat;
+}
+.login-form {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto;
+  text-align: center;
 }
 .Lorem-ipsum-dolor-si {
   height: 3.25rem;
@@ -19,6 +25,7 @@
   text-align: center;
   color: #383743;
 }
+
 .BEM-VINDO-AO-EMPRESA {
   height: 4rem;
   font-family: Roboto;
@@ -38,19 +45,9 @@
 }
 .mto {
   margin-top: 12px;
-  // display: flex;
   ion-icon {
     margin-bottom: -2px;
     padding-right: 0.4rem;
     padding-left: 0.15rem;
   }
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

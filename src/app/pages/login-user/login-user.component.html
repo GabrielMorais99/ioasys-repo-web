@@ -6,22 +6,30 @@
       Lorem ipsum dolor sit amet, contetur adipiscing elit. Nunc accumsan.
     </div>
   </h4>
-</div>
 
-<div class="login-body">
-  <form [formGroup]="loginForm">
-    <mat-label type="text" placeholder="Email" formControlName="email">
-      Email</mat-label
-    >
-    <input
-      class="input-field col s6"
-      type="password"
-      placeholder="Senha"
-      formControlName="password"
-    />
-    <div>
-      <button>Entrar</button>
-    </div>
-  </form>
+  <div class="login-form">
+    <form [formGroup]="loginForm">
+      <div>
+        <mat-label type="text" placeholder="Email">Email</mat-label>
+        <input
+          type="text"
+          placeholder="ioasys@gmail.com"
+          formControlName="email"
+        />
+      </div>
+      <div>
+        <mat-label type="password" placeholder="Senha">Senha</mat-label>
+        <input
+          class="input-field col s6"
+          type="password"
+          placeholder="Senha"
+          formControlName="password"
+        />
+      </div>
+      <div>
+        <button mat-button>Entrar</button>
+      </div>
+    </form>
+  </div>
+  <!-- src="../../../assets/img/img-login.png" -->
 </div>
-<!-- src="../../../assets/img/img-login.png" -->

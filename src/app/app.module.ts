@@ -7,7 +7,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [AppComponent, UserProfileComponent, LoginUserComponent],
   imports: [
@@ -17,6 +21,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule,
+    MatCardModule,
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
