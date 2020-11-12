@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+.logo {
+  // width: 160px;
+  // height: 160px;
+  width: 100%;
+  height: 190px;
+  margin: 20px auto 8px;
+  position: absolute;
+  border-radius: 10%;
+  background: url("assets/img/img-login.png") no-repeat;
+}
+
+.Lorem-ipsum-dolor-si {
+  height: 3.25rem;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: -0.25px;
+  text-align: center;
+  color: #383743;
+}
+.BEM-VINDO-AO-EMPRESA {
+  height: 4rem;
+
+  font-family: Roboto;
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+
+  font-stretch: normal;
+
+  font-style: normal;
+
+  line-height: normal;
+
+  letter-spacing: normal;
+
+  text-align: center;
+}
+.Rectangle-26 {
+  height: 3.3rem;
+
+  border-radius: 3.6px;
+  --background: #57bbbc;
+  background-color: #57bbbc;
+}
+.mto {
+  margin-top: 12px;
+  // display: flex;
+  ion-icon {
+    margin-bottom: -2px;
+    padding-right: 0.4rem;
+    padding-left: 0.15rem;
+  }
+}
