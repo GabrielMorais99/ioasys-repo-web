@@ -1,10 +1,8 @@
 .logo {
-  // width: 160px;
-  // height: 160px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  height: 190px;
-  margin: 20px auto 8px;
-  position: absolute;
+  height: 206px;
   border-radius: 10%;
   background: url("assets/img/img-login.png") no-repeat;
 }
@@ -23,26 +21,17 @@
 }
 .BEM-VINDO-AO-EMPRESA {
   height: 4rem;
-
   font-family: Roboto;
-
   font-size: 1.5rem;
-
   font-weight: bold;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: normal;
-
   text-align: center;
 }
 .Rectangle-26 {
   height: 3.3rem;
-
   border-radius: 3.6px;
   --background: #57bbbc;
   background-color: #57bbbc;
@@ -56,3 +45,6 @@
     padding-left: 0.15rem;
   }
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

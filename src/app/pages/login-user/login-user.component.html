@@ -10,9 +10,17 @@
 
 <div class="login-body">
   <form [formGroup]="loginForm">
-    <div class="form-group">
-      <label type="text" formControlName="email"> tests</label>
-      <input type="password" formControlName="password" />
+    <mat-label type="text" placeholder="Email" formControlName="email">
+      Email</mat-label
+    >
+    <input
+      class="input-field col s6"
+      type="password"
+      placeholder="Senha"
+      formControlName="password"
+    />
+    <div>
+      <button>Entrar</button>
     </div>
   </form>
 </div>
