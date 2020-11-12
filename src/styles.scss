@@ -1,12 +1,12 @@
 .logo {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  margin-bottom: 50px;
+  width: 54rem;
   height: 206px;
   border-radius: 10%;
   background: url("assets/img/img-login.png") no-repeat;
 }
-
 .Lorem-ipsum-dolor-si {
   height: 3.25rem;
   font-family: Roboto;
@@ -46,5 +46,11 @@
   }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
