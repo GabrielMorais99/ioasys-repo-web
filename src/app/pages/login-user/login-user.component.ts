@@ -11,9 +11,6 @@ import { AuthUserService } from 'src/app/api/auth-user.service';
 export class LoginUserComponent implements OnInit {
   public loginForm: FormGroup;
   loading: boolean = false;
-
-  ls = require('local-storage');
-
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthUserService,
