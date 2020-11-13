@@ -10,7 +10,9 @@ import { AuthUserService } from 'src/app/api/auth-user.service';
 })
 export class LoginUserComponent implements OnInit {
   public loginForm: FormGroup;
-  loading: any;
+  loading: boolean = false;
+
+  ls = require('local-storage');
 
   constructor(
     private formBuilder: FormBuilder,
@@ -26,7 +28,9 @@ export class LoginUserComponent implements OnInit {
       password: ['', Validators.compose([Validators.required])],
     });
   }
-  async presentLoading() {}
+  async presentLoading() {
+    this.loading = true;
+  }
 
   async login() {
     this.presentLoading();
@@ -35,6 +39,7 @@ export class LoginUserComponent implements OnInit {
         console.log(data);
         await this.localstorage.set('resp-login', data);
         this.router.navigate(['/user-profile']);
+        this.loading = false;
         // await this.loading.dismiss()
       },
       async (error) => {
