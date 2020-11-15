@@ -60,8 +60,16 @@
   color: #000000 !important;
   background-color: #57bbbc;
   width: 17rem;
-  text-align: center;
+  .button-login {
+    color: white;
+    background-color: #57bbbc !important;
+    text-align: center;
+  }
 }
 .wrapper-login {
+  // background-color: #ebe9d7;
+}
+
+html {
   background-color: #ebe9d7;
 }

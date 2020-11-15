@@ -14,8 +14,7 @@ export class LoginUserComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthUserService,
-    private router: Router,
-    private localstorage: Storage
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -27,6 +26,7 @@ export class LoginUserComponent implements OnInit {
   }
   async presentLoading() {
     this.loading = true;
+    setTimeout(() => (this.loading = false));
   }
 
   async login() {
@@ -34,9 +34,7 @@ export class LoginUserComponent implements OnInit {
     this.authService.login(this.loginForm.value).subscribe(
       async (data) => {
         console.log(data);
-        await this.localstorage.set('resp-login', data);
         this.router.navigate(['/user-profile']);
-        this.loading = false;
         // await this.loading.dismiss()
       },
       async (error) => {

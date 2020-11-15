@@ -31,15 +31,11 @@
           />
         </mat-form-field>
       </div>
-      <div class="button-container">
-        <div class="spinner-container" *ngIf="loading">
-          <mat-spinner diameter="24"></mat-spinner>
-        </div>
-        <button
-          mat-raised-button
-          [disabled]="loading"
-          (click)="presentLoading()"
-        >
+      <div class="spinner-container" *ngIf="loading">
+        <mat-spinner diameter="24"></mat-spinner>
+      </div>
+      <div class="button-login">
+        <button mat-button [disabled]="loading" (click)="login()">
           Entrar
         </button>
       </div>
